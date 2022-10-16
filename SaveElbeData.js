@@ -25,6 +25,12 @@ function saveElbeData(filteredElbeData){
   ].join('\r\n');
   
   console.log(csvElbeData);
+  var encodedUri = encodeURI(csvElbeData);
+  var link = document.createElement("a");
+  link.setAttribute("href", encodedUri);
+  link.setAttribute("download", "Elbe_Data.csv");
+  document.body.appendChild(link);
+  link.click(); 
   
 
 
