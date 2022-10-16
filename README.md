@@ -1,4 +1,3 @@
-Code is written in JavaScript.
 setInterval function is called to get the pegel online API data every 5 minutes.
 While calling the fetch api, parameter Water filters the data to only include the data for the Elbe river.
 Only 3 parameters km,longitude and latitude is mapped from the JSON response.
