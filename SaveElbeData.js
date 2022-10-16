@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-//import File from ""
+
 
 getElbeData();
 setInterval( getElbeData, 300000);
@@ -26,37 +26,8 @@ function saveElbeData(filteredElbeData){
   
   console.log(csvElbeData);
   
-// var encodedUri = encodeURI(csvElbeData);
-// var link = document.createElement("a");
-// link.setAttribute("href", encodedUri);
-// link.setAttribute("download", "Elbe_Data.csv");
-// document.body.appendChild(link);
-// link.click(); 
-
-// var folderName = "~/Desktop/";
-// var now = new Date();
-// var logfile_name = now.getFullYear() + "-"+ now.getMonth() + "-" + now.getDate();
-// var f = new Folder(folderName + logfile_name);
-// if ( ! f.exists ) {
-//     f.create();
-// }
-// //var docRef=app.activeDocument;
-// var file = new File(folderName+"/"+'ElbeData.csv');
-// file.open('w');
-// file.writeln(",",csvElbeData);
-// file.close();
 
 
     
 }
-// function download_csv_file()
-// {
-//     var hiddenElement = document.createElement('a');  
-//     hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csvElbeData);  
-//     hiddenElement.target = '_blank';    
-//     hiddenElement.download = 'Elbe_Data.csv';  
-//     hiddenElement.click(); 
-     
-
-// }
 
