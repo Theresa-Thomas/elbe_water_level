@@ -20,7 +20,7 @@ function saveElbeData(filteredElbeData){
   const replacer = (key, value) => value === null ? 0: value ;
   const header = Object.keys(filteredElbeData[0]);
   const csvElbeData = [
-    header.join(','), // header row first
+    header.join(','), 
     ...items.map(row => header.map(fieldName => JSON.stringify(row[fieldName], replacer)).join(','))
   ].join('\r\n');
   
